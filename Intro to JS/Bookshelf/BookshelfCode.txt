@@ -1,1 +1,25 @@
-s
+var book = [
+    {
+    title: "The Giver",
+    stars: 4},
+    {title: "Hunger Games",
+    stars: 2
+    },
+    {title: "Harry Potter",
+    stars:3}
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+// draw books
+for(var i = 0; i < book.length; i++){
+    fill(230, i*100, i+10);
+    rect(10 + i*100, 20, 90, 100);
+    fill(0, 0, 0);
+    text(book[i].title, 15+i*100, 29, 70, 100);
+    for (var s = 0; s < book[i].stars; s++) {
+        image(getImage("cute/Star"), 11 + s * 20 + i*100, 90, 20, 30);
+ }
+}
