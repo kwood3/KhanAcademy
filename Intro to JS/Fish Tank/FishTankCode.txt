@@ -1,1 +1,45 @@
-s
+background(89, 216, 255);
+
+var drawFish = function(fishX, fishY){
+
+var centerX = fishX;
+var centerY = fishY;
+var bodyLength = random(8, 147);
+var bodyHeight = random(7, 51);
+//var bodyColor = ;
+
+noStroke();
+fill(220, 252, 41);
+// body
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+// tail
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+// eye
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+};
+
+drawFish(277, 225);
+drawFish(250, 305);
+drawFish(169, 368);
+drawFish(113, 205);
+drawFish(417, 209);
+drawFish(90, 51);
+drawFish(273, 126);
+drawFish(87, 291);
+drawFish(79, 130);
+drawFish(332, 10);
+drawFish(357, 382);
+drawFish(251, 64);
+drawFish(361, 315);
+drawFish(371, 87);
+drawFish(186, -2);
+drawFish(149, 258);
+drawFish(240, 155);
+drawFish(10, 97);
+drawFish(363, 257);
+drawFish(446, 157);
