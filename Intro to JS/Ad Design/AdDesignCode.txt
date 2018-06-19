@@ -1,1 +1,20 @@
-s
+var label1 = "BUY NOW";
+var a=1;
+
+fill(random(255), random(255), random(255)); //different color every time program runs
+textSize(40);
+text(label1, 100,40);
+textSize(20);
+text("Smiley Face Stuffies!!", 100, 87);
+
+noStroke();
+fill(235, 247, 0);
+ellipse(250,250,200,200);
+
+fill(0);
+ellipse(190,230,20,20);
+ellipse(280,240,20,20);
+ellipse(250,300,100,60);
+
+fill(255, 0, 0);
+ellipse(250,320,30,20);
