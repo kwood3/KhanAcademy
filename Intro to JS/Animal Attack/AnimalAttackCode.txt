@@ -1,1 +1,109 @@
-s
+background(54, 176, 247);
+
+//sun
+fill(251, 255, 0);
+ellipse(290,50,80,80);
+//grass
+noStroke();
+fill(36, 184, 33);
+rect(0, 300, 400, 300);
+
+//body
+fill(255, 255, 255);
+stroke(0, 0, 0);
+
+var bodyX = 155;
+var bodyY = 160;
+var sizeX = 213;
+var sizeY = sizeX/(3/2);
+
+rect(bodyX,bodyY,sizeX,sizeY);
+
+//dots
+fill(0);
+ellipse(250,270,20,20);
+ellipse(260,270,20,20);
+ellipse(280,200,20,20);
+ellipse(290,200,20,20);
+ellipse(285,195,20,20);
+ellipse(225,195,30,20);
+ellipse(225,195,20,30);
+ellipse(340,270,20,30);
+ellipse(340,270,40,20);
+
+fill(255, 255, 255);
+//legs
+stroke(5, 1, 1);
+
+var leg1X = bodyX+sizeX/7;
+var legY = bodyY+sizeY;
+var leg2X = bodyX+sizeX/11;
+var leg3X = bodyX+sizeX/1.5;
+var leg4X = bodyX+sizeX/1.3; 
+var lSizeX = sizeX/8;
+var lSizeY = lSizeX * 2.5;
+
+//leg1 
+rect(leg1X, legY, lSizeX, lSizeY); 
+//leg2
+rect(leg2X, legY, lSizeX, lSizeY);
+//leg3
+rect(leg3X, legY, lSizeX, lSizeY);
+//leg4
+rect(leg4X, legY, lSizeX, lSizeY); 
+
+//head
+
+var headX = bodyX - sizeX/5;
+var headY = bodyY - sizeY/5;
+var headSizeX = sizeX/2.5;
+var headSizeY = sizeX/2;
+
+rect(headX, headY, headSizeX, headSizeY);
+
+
+//tail
+fill(0, 0, 0); 
+rotate(355);
+var tailX =  bodyX + sizeX/1.1;
+var tailY = bodyY+sizeX/5 ;
+var tailSizeX = sizeX/20;
+var tailSizeY = sizeX/2;
+
+rect(tailX, tailY, tailSizeX, tailSizeY); 
+
+//eyes
+rotate(0);
+fill(250, 250, 250);
+var eyeX = bodyX - sizeX/6;
+var eye2X= bodyX - sizeX/30;
+var eyeY = bodyY*1.06;
+var eyeSize = sizeX/15; 
+var pupilSize = eyeSize/3;
+
+//mouth
+fill(230, 120, 120);
+var mouthX = bodyX - sizeX/5;
+var mouthY = eyeY+sizeX/3.5;
+var mouthSizeX = sizeX/5;
+var mouthSizeY = sizeX/-9;
+
+rect(mouthX, mouthY, mouthSizeX,mouthSizeY);
+
+var x = 0;
+var y = 0;
+
+draw = function(){
+    
+    fill(245, 245-x, 245-x);
+    ellipse(eyeX, eyeY, eyeSize+y, eyeSize+y);
+    ellipse(eye2X, eyeY, eyeSize+y, eyeSize+y);
+
+    fill(0, 0, 0);
+    ellipse(eyeX, eyeY, pupilSize+y/2, pupilSize+y/2);
+    ellipse(eye2X, eyeY, pupilSize+y/2, pupilSize+y/2);
+    
+    x++;
+    y++;
+    
+};
