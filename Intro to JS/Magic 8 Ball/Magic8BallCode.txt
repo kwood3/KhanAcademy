@@ -1,1 +1,40 @@
-s
+fill(59, 58, 59);
+ellipse(200, 200, 375, 375);
+fill(64, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+
+var answer = floor(random(1, 6));
+
+
+if (answer === 1) {
+    textSize(10);
+    text("IN YOUR DREAMS", 155, 215);
+    textSize(19);
+    text("1",194,150);
+    
+}
+else if(answer === 2) {
+    textSize(13);
+    text("NOPE", 181, 215);
+    textSize(19);
+    text("2",194,150);
+}
+else if(answer === 3) {
+    textSize(13);
+    text("GUESS AGAIN", 155, 215);
+    textSize(19);
+    text("3",194,150);
+}
+else if(answer === 4) {
+    textSize(13);
+    text("GO FOR IT", 168, 215);
+    textSize(19);
+    text("4",194,150);
+}
+else{
+    textSize(13);
+    text("MAYBE", 179, 215);
+    textSize(19);
+    text("5",194,150);
+}
