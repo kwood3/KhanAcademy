@@ -1,1 +1,30 @@
-s
+var xPos = 40;
+var yPos = 300;
+
+if (yPos > height){ //draws the star back to its original place so animation never ends
+    yPos = 300;
+    xPos = 40;
+}
+
+draw = function() { //draws second star to mouse (not working due to khan academy bug that doesnt allow you to bind objects to mouseX and mouseY)
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 20, 20);
+    
+    fill(242, 255, 0);
+    ellipse(mouseX,mouseY,20,20);
+    xPos++;
+    yPos--;
+    
+    if(mouseX === xPos){
+        
+        xPos = random(10,300);
+    } 
+    if(mouseY === yPos){
+        yPos = random(10,300);
+    }
+};
+
+
+
+
