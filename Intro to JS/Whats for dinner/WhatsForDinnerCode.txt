@@ -1,1 +1,25 @@
-s
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+//steak thing idk
+noStroke();
+fill(110, 67, 67);
+ellipse(160,200,100,200);
+fill(237, 98, 98);
+ellipse(160,200,70,100);
+fill(255, 255, 255);
+ellipse(160,200,20,20);
+
+//peas 
+var peasX= [240,270,250,230];
+var peasY= [200,210,170, 230];
+
+var drawPeas = function(){
+    for(var i = 0; i < peasX.length; i++){
+        fill(26, 235, 89);
+        ellipse(peasX[i],peasY[i],20,20);
+    }
+};
+drawPeas();
+
