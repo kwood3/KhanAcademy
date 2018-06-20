@@ -1,1 +1,17 @@
-s
+var xPositions = [200, 300,400,50,20345,234,123,221,334,23,212,23,221,32,321,234,262,27,227,216,128,284,205,258,257];
+var yPositions = [0,50,100,20,30,232,345,234,123,21,3,23,212,223,221,232,321,234,262,27,227,216,128,284,205,258,257];
+
+draw = function() {
+    background(204, 247, 255);
+
+    for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(random(255),random(255),random(255)); // seizure inducing rainbow colors
+        ellipse(xPositions[i], yPositions[i], 10, 10);
+        yPositions[i] += 5;
+        
+        if(yPositions[i] > height){
+           yPositions[i] = 0; //sends rain back to top
+        }
+    }
+};
