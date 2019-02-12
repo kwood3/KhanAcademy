@@ -1,0 +1,55 @@
+<!-- Project blog by Koby Wood. Found @ https://www.khanacademy.org/computer-programming/project-blog/5391906101985280 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+    </head>
+    <body>
+        <style>
+            
+            body{
+                background-color:rgb(173, 175, 250);
+            }
+            
+            h1{
+               font-family:monospace;
+               color: blue;
+            }
+            h2{
+                font-family:sans-serif;
+                color: blue;
+            }
+            p{
+                font-family:cursive;
+            }
+            ul{
+                font-family:sans-serif;
+            }
+            h6{
+                font-family:sans-serif;
+            }
+            
+        </style>
+        <h1>Koby's blog</h1>
+
+        <h3>Contents</h3>
+        <ul>
+            <li>First post!</li>
+            <li>...</li>
+            <li>..</li>
+            <li>.</li>
+        </ul>
+        
+        <h2>First post</h2>
+        <h6>Posted on some date in some year</h6>
+        
+        <p><em>Something excited happened.</em><br>This is where I write interesting stuff for my blog<br>
+            <strong>I can type in bold</strong>
+            
+        </p>
+        
+        
+    </body>
+</html>
